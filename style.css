@@ -1,0 +1,203 @@
+/* Reset some default styles for the body */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Style for the sidebar */
+.sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #333;
+    padding-top: 20px;
+}
+.dash-img{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.dash-text{
+    color: #fff;
+
+}
+
+.sidebar h2 {
+    color: #fff;
+    text-align: center;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+
+
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+    display: block;
+    padding: 5px 15px ;
+    text-decoration: none;
+    color: #fff;
+    transition: background-color 0.3s;
+}
+
+.sidebar ul li a:hover {
+    background-color: #555;
+}
+
+.content {
+    margin-left: 250px;
+    padding: 20px;
+    margin-top: 30PX;
+}
+
+
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    .content {
+        margin-left: 0%;
+    }
+    ul li {
+        display:flex;
+        justify-content: center;
+        
+    }
+}
+
+.status-card{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    color: #fff;
+}
+.card01{
+    width: 220px;
+    height: 150px;
+    background: blue;
+    border-radius: 12%;
+
+} 
+.card02{
+    width: 220px;
+    height: 150px;
+    background: rgb(226, 111, 111);
+    border-radius: 12%;
+
+
+} .card03{
+    width: 220px;
+    height: 150px;
+    background: green;
+    border-radius: 12%;
+
+} .card04{
+    width: 220px;
+    height: 150px;
+    background:rosybrown;
+    border-radius: 12%;
+} 
+h4{
+    padding-left:10px;
+    padding-top: 10px;
+}
+.text1{
+    font-size: 25px;
+    padding-left: 10px;
+    font-weight: 500;
+}
+.text2{
+    font-size: 18px;
+    float: right;
+    padding-top: 10px;
+    padding-right: 10px;
+   
+}
+
+.progress-bar {
+    width: 100%;
+    background-color: #f0f0f0;
+    height: 5px;
+    border-radius: 4px;
+    margin: 20px 0;
+    padding-left: 10px;
+}
+
+
+.progress {
+    height: 0%;
+    background-color: #000000;
+    border-radius: 4px;
+    transition: width 0.3s ease-in-out; 
+}
+h1 {
+    margin: 0;
+    font-size: 24px;
+}
+@media (max-width: 768px) {
+    .status-card .card01 .card02 .card03.card04{
+        width: 50%;
+        height: auto;
+        position: relative;
+    }
+}
+
+.chart-container {
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+    max-width: 500px;
+    width: 100%;
+   
+}
+.data{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.table-container {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+th {
+    background-color: #695a7a;
+    color: #fff;
+    padding: 10px;
+    text-align: left;
+}
+td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+tr:hover {
+    background-color: #d3d3d3;
+}
+
